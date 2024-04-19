@@ -1,23 +1,18 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const router = require("./router/auth-router");
-const mongoose = require("mongoose");
+const connectDb = require("./utils/db");
+
+//middleware
+app.use(express.json());
 
 app.use("/api/auth", router);
 
-const DB =
-  "mongodb+srv://devugyen:yOK0V2XpohAXBDjl@cluster0.w58u2hc.mongodb.net/yuji-app?retryWrites=true&w=majority&appName=Cluster0";
+const PORT = 5000;
 
-mongoose
-  .connect(DB)
-  .then(() => {
-    console.log("database connection successful");
-  })
-  .catch((error) => {
-    console.log("connection failed", error);
+connectDb().then(() => {
+  app.listen(PORT, () => {
+    console.log(`server running at port ${PORT}`);
   });
-
-const port = 5000;
-app.listen(port, () => {
-  console.log(`server running at port ${port}`);
 });

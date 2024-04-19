@@ -1,6 +1,6 @@
 const home = async (req, res) => {
   try {
-    res.status(200).send("welcome to home");
+    res.status(200).json("home");
   } catch (error) {
     console.log(error);
   }
@@ -8,7 +8,7 @@ const home = async (req, res) => {
 
 const register = async (req, res) => {
   try {
-    res.status(200).send("successful registration");
+    res.status(200).json({message: req.body});
   } catch (error) {
     console.log(error);
   }
