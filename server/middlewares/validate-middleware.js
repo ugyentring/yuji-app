@@ -1,4 +1,4 @@
-//This middleware is for the auth validation and it is used in the auth router
+//This middleware is for the validation and it is used in the auth router and contact too
 
 const validate = (schema) => async (req, res, next) => {
   try {
