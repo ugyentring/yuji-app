@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,12 +17,8 @@ html {
   font-size: 62.5%;
 }
 
-
 body {
   margin: 0;
-  /* display: flex;
-  place-items: center; */
-  /* min-width: 32rem; */
   min-height: 100vh;
 }
 
@@ -54,8 +50,6 @@ a {
 li {
   list-style: none;
 }
-
-/*? layout Rule  */
 
 .container {
   max-width: 140rem;
@@ -103,8 +97,6 @@ button {
   margin-left: 3.2rem;
 }
 
-/** Hero Section **/
-
 .section-hero {
   & .grid {
     align-items: center;
@@ -128,10 +120,6 @@ button {
     }
   }
 }
-
-/** End Hero  **/
-
-/** analytics Section **/
 
 .section-analytics {
   margin: 9.6rem 0;

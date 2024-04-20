@@ -1,11 +1,54 @@
-.container {
-  min-width: 140rem;
-  padding: 4.2rem 2.4rem;
-  display: flex;
-  justify-content: space-between;
+/* Navbar.css */
+
+header {
+  padding: 1.6rem 0;
 }
 
-ul {
+.container {
   display: flex;
-  gap: 3.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-brand a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--dark-color);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif; /* Change font family */
+  text-transform: uppercase; /* Make text uppercase */
+}
+
+.logo-brand a:hover {
+  color: var(--btn-color);
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-right: 4rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--btn-color);
 }

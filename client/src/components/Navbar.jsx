@@ -7,7 +7,7 @@ const Navbar = () => {
       <header>
         <div className="container">
           <div className="logo-brand">
-            <NavLink to="/">UgyenCode</NavLink>
+            <NavLink to="/">UgyenFolio</NavLink>
           </div>
 
           <nav>
