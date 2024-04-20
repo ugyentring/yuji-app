@@ -4,7 +4,7 @@ const home = async (req, res) => {
   try {
     res.status(200).json("home");
   } catch (error) {
-    console.log(error);
+    res.json("Error", error);
   }
 };
 
@@ -30,7 +30,7 @@ const register = async (req, res) => {
       userId: userCreated._id.toString(),
     });
   } catch (error) {
-    console.log("Internal server error", error);
+    next(error);
   }
 };
 

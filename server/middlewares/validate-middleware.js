@@ -6,7 +6,16 @@ const validate = (schema) => async (req, res, next) => {
     req.body = parseBody;
     next();
   } catch (error) {
-    res.status(400).json({ msg: "Validation failed" });
+    const status = 422;
+    const message = "Fill all the inputs";
+    const extraDetails = error.errors[0].message;
+
+    const err = {
+      status,
+      message,
+      extraDetails,
+    };
+    next(err);
   }
 };
 
