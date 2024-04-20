@@ -6,11 +6,13 @@ import Service from "./pages/Service";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import PageNotFound from "./pages/PageNotFound";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

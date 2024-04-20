@@ -1,8 +1,18 @@
+import Yuji from "../assets/yuji.jpg";
+
 const Register = () => {
   return (
-    <div>
-      <h1>register</h1>
-    </div>
+    <>
+      <main>
+        <div className="section-registration">
+          <div className="container grid grid-two-cols">
+            <div className="registration-image">
+              <img src={Yuji}/>
+            </div>
+          </div>
+        </div>
+      </main>
+    </>
   );
 };
 
