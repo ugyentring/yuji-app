@@ -1,7 +1,7 @@
 /* Navbar.css */
 
 header {
-  padding: 1.6rem 0;
+  padding: 1rem 0;
 }
 
 .container {
@@ -20,8 +20,8 @@ header {
   font-weight: bold;
   color: var(--dark-color);
   text-decoration: none;
-  font-family: "Roboto", sans-serif; /* Change font family */
-  text-transform: uppercase; /* Make text uppercase */
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
 }
 
 .logo-brand a:hover {
@@ -35,6 +35,8 @@ nav ul {
 
 nav ul li {
   margin-right: 4rem;
+  width: 10rem;
+  text-align: center;
 }
 
 nav ul li:last-child {
@@ -47,8 +49,15 @@ nav ul li a {
   color: var(--dark-color);
   text-decoration: none;
   transition: color 0.3s;
+  display: block;
+  padding: 1rem;
 }
 
 nav ul li a:hover {
   color: var(--btn-color);
+}
+
+nav ul li a.active {
+  color: var(--btn-color);
+  font-weight: bold;
 }

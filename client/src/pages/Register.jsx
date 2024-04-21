@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Yuji from "../assets/happy.jpg";
-import "./register.css";
+import "./css/register.css";
 
 const Register = () => {
   const [user, setUser] = useState({
