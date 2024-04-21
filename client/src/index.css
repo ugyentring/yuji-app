@@ -51,12 +51,6 @@ li {
   list-style: none;
 }
 
-.container {
-  max-width: 140rem;
-  padding: 2rem 2rem;
-  margin: 0 auto;
-}
-
 .grid {
   display: grid;
   gap: 6.4rem;

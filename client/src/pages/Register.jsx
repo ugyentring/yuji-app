@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Yuji from "../assets/happy.jpg";
+import Yuji from "../assets/register.png";
 import "./css/register.css";
 
 const Register = () => {
@@ -32,7 +32,7 @@ const Register = () => {
                 style={{ borderRadius: "5px" }}
                 className="register-yuji"
                 src={Yuji}
-                width="350"
+                width="500"
                 height="500"
               />
             </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./css/register.css";
-import gogo from "../assets/gogo.png";
+import gogo from "../assets/login.png";
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -31,7 +31,7 @@ const Login = () => {
                   style={{ borderRadius: "5px" }}
                   className="register-yuji"
                   src={gogo}
-                  width="500"
+                  width="400"
                   height="500"
                 />
               </div>
