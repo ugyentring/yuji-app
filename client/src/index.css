@@ -68,3 +68,12 @@ li {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.btn-1,
+.btn-2 {
+  background-color: #555df6;
+  color: white;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 4px;
+}

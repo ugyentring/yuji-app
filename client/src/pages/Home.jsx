@@ -18,11 +18,11 @@ const Home = () => {
               </p>
               <div className="flex">
                 <Link to="/contact">
-                  <button className="bg-green-900">Connct Now</button>
+                  <button className="btn-1">Connct Now</button>
                 </Link>
 
                 <Link to="/service">
-                  <button className="">Learn More</button>
+                  <button className="btn-2">Learn More</button>
                 </Link>
               </div>
             </div>
